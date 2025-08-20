@@ -1,0 +1,130 @@
+ html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    align-items:center;
+    background:linear-gradient(320deg,#e66d6d,#c2c246,#56ac68cc);
+    display: flex;
+    font-family: 'Dosis' sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+
+
+
+/* Start Button Styling */
+.start-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #d72880, #84f589);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+    background: linear-gradient(135deg, #bb6697, #388e3c);
+    transform: scale(1.05);
+}
+
+.start-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+} 
+
+
+
+
+.wrapper{
+display: flex;
+flex-direction: column;
+align-items: center;
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border-radius: 12px;
+box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+color: #232323;
+background: rgba(243, 240, 240, 0.3);
+border: 1px solid rgba(255, 255, 255, 0.34);
+padding: 20px;
+width: 350px;
+gap: 15px;
+}
+.screen{
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+background:rgba(255, 255, 255, 0.75);
+border: 1px solid rgba(255, 255, 255, 0.01);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+color: #232323;
+font-size: 35px;
+overflow-x: auto;
+padding: 20px;
+text-align: right;
+width:100%;
+min-height: 70px;
+}
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.calc-button{
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter:blur(5.5px);
+background:rgba(255, 255, 255, 0.75);
+border: 1px solid rgba(255, 255, 255, 0.01);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+color: #232323;
+font-family: inherit;
+font-size: 24px;
+height: 55px;
+
+margin: 5px;
+cursor: pointer;
+transition: 0.2s ease;
+width: 65px;
+}
+.calc-button:last-child{
+backdrop-filter: blur (5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+background:rgba(255, 255, 255, 0.75);
+border: 1px solid rgba(255, 255, 255, 0.01);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+color: #fff;
+background: #d72880;
+}
+.calc-button:last-child:hover{
+background-color: inherit;
+color: inherit;
+}
+.calc-button:hover{
+background-color: inherit;
+}
+.calc-button:active{
+background-color:
+#ffef78;
+}
+.double{
+ flex:2
+}
+.triple{
+flex:3;
+}
